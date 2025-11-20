@@ -20,21 +20,21 @@ Supports **single** and **multiple sections**, so you can hide long texts behind
 ## Demo
 
 **Single Section Input:**
-
+```
 Visible: Hello Hidden: My name is Phoenix
-
+```
 Generated output:
-
+```
 Hello … My name is Phoenix
-
+```
 **Multiple Section Input:**
-
+```
 Hello | How are you? | My name is Phoenix
-
+```
 Generated output:
-
+```
 Hello … How are you? … My name is Phoenix
-
+```
 ---
 
 ## Installation / Usage
