@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Read More Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>WhatsApp "Read More" Generator</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-target="single">Single Section</button>
+      <button class="tab-btn" data-target="multiple">Multiple Sections</button>
+    </div>
+
+    <!-- Single Section -->
+    <div class="tab-content" id="single">
+      <label for="visible">Text to show first:</label>
+      <textarea id="visible" placeholder="Hello"></textarea>
+
+      <label for="hidden">Text to show on click:</label>
+      <textarea id="hidden" placeholder="my name is Phoenix"></textarea>
+
+      <button id="generate">Generate Single Read More</button>
+    </div>
+
+    <!-- Multiple Section -->
+    <div class="tab-content hidden" id="multiple">
+      <label for="multi">Text with multiple sections (separate with |):</label>
+      <textarea id="multi" placeholder="Hello | How are you? | My name is Phoenix"></textarea>
+
+      <button id="generateMulti">Generate Multi Read More</button>
+    </div>
+
+    <!-- Output -->
+    <label for="output">Copy this text:</label>
+    <textarea id="output" readonly placeholder="Your generated text will appear here..."></textarea>
+
+    <button id="copy">Copy to Clipboard</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
